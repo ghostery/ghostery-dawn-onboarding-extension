@@ -1,0 +1,25 @@
+{
+  "name": "ghostery-dawn-onboarding-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "web-ext build",
+    "sign": "web-ext sign --channel unlisted --timeout 360000",
+    "start": "web-ext run --pref extensions.experiments.enabled=true --pref security.sandbox.content.level=2"
+  },
+  "webExt": {
+    "sourceDir": "./src/",
+    "run": {
+      "firefox": "firefoxdeveloperedition"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostery/ghostery-dawn-onboarding-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghostery/ghostery-dawn-onboarding-extension/issues"
+  },
+  "homepage": "https://github.com/ghostery/ghostery-dawn-onboarding-extension#readme"
+}

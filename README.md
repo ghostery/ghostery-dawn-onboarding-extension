@@ -1,1 +1,1 @@
-# ghostery-dawn-onboarding-extension
+# Ghostery Dawn Onboarding

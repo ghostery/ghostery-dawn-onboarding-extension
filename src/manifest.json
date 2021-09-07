@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dawn-onboarding@ghostery.com"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "manifest_version": 2,
+  "name": "Ghostery Dawn Onboarding",
+  "permissions": [
+  ],
+  "experiment_apis": {
+    "ghostery": {
+      "schema": "experiment_apis/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["ghostery"]],
+        "script": "experiment_apis/parent.js"
+      },
+      "child": {
+        "scopes": ["addon_child"],
+        "paths": [["ghostery"]],
+        "script": "experiment_apis/child.js"
+      }
+    }
+  }
+}
