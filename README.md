@@ -1,0 +1,1 @@
+# ghostery-dawn-onboarding-extension
