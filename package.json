@@ -1,7 +1,6 @@
 {
   "name": "ghostery-dawn-onboarding-extension",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "web-ext build",

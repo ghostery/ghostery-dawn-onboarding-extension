@@ -13,6 +13,7 @@
   "manifest_version": 2,
   "name": "Ghostery Dawn Onboarding",
   "permissions": [
+    "storage"
   ],
   "experiment_apis": {
     "ghostery": {
@@ -21,11 +22,6 @@
         "scopes": ["addon_parent"],
         "paths": [["ghostery"]],
         "script": "experiment_apis/parent.js"
-      },
-      "child": {
-        "scopes": ["addon_child"],
-        "paths": [["ghostery"]],
-        "script": "experiment_apis/child.js"
       }
     }
   }
