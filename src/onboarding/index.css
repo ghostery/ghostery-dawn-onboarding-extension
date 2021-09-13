@@ -214,3 +214,8 @@ button {
 .tab2 button {
   margin-top: 40px;
 }
+
+.tab2 input[type=radio] {
+  position: relative;
+  bottom: 1px;
+}
