@@ -29,9 +29,12 @@ const query = searchParams.get('query');
     await browser.runtime.sendMessage('onboarding-complete');
     const currentTab = await browser.tabs.getCurrent();
 
+    const searchTab = await browser.tabs.create({});
+
     browser.search.search({
       query,
       engine: searchEngineName,
+      tabId: searchTab.id,
     });
 
     browser.tabs.remove(currentTab.id);
