@@ -15,22 +15,19 @@ browser.runtime.onMessage.addListener((message) => {
 });
 
 function openOnboardingPage({ tabId, url }) {
-  switch (onboardingComplete) {
-    case false:
-      browser.tabs.update(tabId, {
-        loadReplace: true,
-        url: browser.runtime.getURL(
-          `onboarding/index.html?version=${VERSION}&query=${
-            new URL(url).searchParams.get('q') || ''
-          }`,
-        ),
-      });
-      break;
-    case true:
-      browser.webNavigation.onBeforeNavigate.removeListener(openOnboardingPage);
-    default:
-      break;
+  if (onboardingComplete) {
+    browser.webNavigation.onBeforeNavigate.removeListener(openOnboardingPage);
+    return;
   }
+
+  browser.tabs.update(tabId, {
+    loadReplace: true,
+    url: browser.runtime.getURL(
+      `onboarding/index.html?version=${VERSION}&query=${
+        new URL(url).searchParams.get('q') || ''
+      }`,
+    ),
+  });
 }
 
 browser.webNavigation.onBeforeNavigate.addListener(openOnboardingPage, {
