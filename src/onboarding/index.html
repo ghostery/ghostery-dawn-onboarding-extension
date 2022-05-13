@@ -10,7 +10,7 @@
   <body class="index">
     <div class="bg">
       <div class="wrapper">
-        <h2>Choose your search engine</h2>
+        <h2 data-i18n="ui_header_title"></h2>
         <main>
           <ul>
             <li>
@@ -65,35 +65,34 @@
             </li>
           </ul>
           <aside>
-            <div class="hidden description" data-description-for="search1">
-              Ghostery Glow is built into Ghostery Dawn browser. This
-              one-of-a-kind search engine does not log your search history,
-              which means you get served objective results, not results that are
-              filtered by the likelihood you’ll click on them.
-            </div>
-            <div class="hidden description" data-description-for="search2">
-              DuckDuckGo emphasizes protecting searchers’ privacy and avoiding
-              the filter bubble of personalized search results.
-            </div>
-            <div class="hidden description" data-description-for="search3">
-              Startpage highlights privacy as its distinguishing feature. It
-              allows users to obtain Google Search results while protecting
-              users’ privacy by not storing personal information or search data
-              and removing all trackers.
-            </div>
-            <div class="hidden description" data-description-for="search4">
-              Microsoft Bing helps you find trusted search results fast, tracks
-              topics and trending stories that matter to you, and gives you
-              control of your privacy.
-            </div>
-            <div class="hidden description" data-description-for="search5">
-              Handling over 3.5 billion searches per day, Google has a 92% share
-              of the global search engine market. It is also the most-visited
-              website in the world.
-            </div>
+            <div
+              class="hidden description"
+              data-description-for="search1"
+              data-i18n="search_description_ghostery"
+            ></div>
+            <div
+              class="hidden description"
+              data-description-for="search2"
+              data-i18n="search_description_duckduckgo"
+            ></div>
+            <div
+              class="hidden description"
+              data-description-for="search3"
+              data-i18n="search_description_startpage"
+            ></div>
+            <div
+              class="hidden description"
+              data-description-for="search4"
+              data-i18n="search_description_bing"
+            ></div>
+            <div
+              class="hidden description"
+              data-description-for="search5"
+              data-i18n="search_description_google"
+            ></div>
           </aside>
         </main>
-        <button>OK</button>
+        <button data-i18n="ui_submit_button"></button>
       </div>
     </div>
     <script type="module" src="./index.js"></script>
