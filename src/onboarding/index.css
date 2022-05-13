@@ -119,10 +119,6 @@ button {
   border-radius: 12px;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .bg {
   height: 100%;
   z-index: 100;
@@ -149,16 +145,16 @@ button {
   border-radius: 60px;
 }
 
-.tab1 img {
-  height: 58px
+.hidden {
+  display: none !important;
 }
 
-.tab2 ul {
+ul {
   padding-left: 45px;
   list-style-type: none;
 }
 
-.tab2 ul li {
+ul li {
   position: relative;
   padding: 7px 0px;
   display: flex;
@@ -168,13 +164,13 @@ button {
   font-size: 15px
 }
 
-.tab2 .description {
+.description {
   font-size: 12px;
   line-height: 17px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.tab2 .icon {
+.icon {
   background: white;
   height: 40px;
   width: 40px;
@@ -187,17 +183,17 @@ button {
   justify-content: center;
 }
 
-.tab2 .icon img {
+.icon img {
   height: 28px;
   width: 28px;
 }
 
-.tab2 main {
+main {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.tab2 main aside {
+main aside {
   margin-top: 20px;
   padding-left: 20px;
   border-left-width: 1px;
@@ -211,11 +207,11 @@ button {
     ) 1 100%;
 }
 
-.tab2 button {
+button {
   margin-top: 40px;
 }
 
-.tab2 input[type=radio] {
+input[type=radio] {
   position: relative;
   bottom: 1px;
 }
