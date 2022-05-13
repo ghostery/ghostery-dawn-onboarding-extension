@@ -3,6 +3,11 @@ const searchParams = new URLSearchParams(window.location.search);
 const version = Number(searchParams.get('version'));
 const query = searchParams.get('query');
 
+// Translate content
+document.querySelectorAll('[data-i18n]').forEach((element) => {
+  element.textContent = browser.i18n.getMessage(element.dataset.i18n);
+});
+
 async function submit() {
   const searchEngineName = document.querySelector('input:checked').value;
 

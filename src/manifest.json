@@ -26,5 +26,6 @@
         "script": "experiment_apis/parent.js"
       }
     }
-  }
+  },
+  "default_locale": "en"
 }

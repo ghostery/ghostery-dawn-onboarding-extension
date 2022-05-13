@@ -1,0 +1,23 @@
+{
+  "ui_header_title": {
+    "message": "Choose your search engine"
+  },
+  "ui_submit_button": {
+    "message": "OK"
+  },
+  "search_description_ghostery": {
+    "message": "Ghostery Glow is built into Ghostery Dawn browser. This one-of-a-kind search engine does not log your search history, which means you get served objective results, not results that are filtered by the likelihood you’ll click on them."
+  },
+  "search_description_duckduckgo": {
+    "message": "DuckDuckGo emphasizes protecting searchers’ privacy and avoiding the filter bubble of personalized search results."
+  },
+  "search_description_startpage": {
+    "message": "Startpage highlights privacy as its distinguishing feature. It allows users to obtain Google Search results while protecting users’ privacy by not storing personal information or search data and removing all trackers."
+  },
+  "search_description_bing": {
+    "message": "Microsoft Bing helps you find trusted search results fast, tracks topics and trending stories that matter to you, and gives you control of your privacy."
+  },
+  "search_description_google": {
+    "message": "Handling over 3.5 billion searches per day, Google has a 92% share of the global search engine market. It is also the most-visited website in the world."
+  }
+}
