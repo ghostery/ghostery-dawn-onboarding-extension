@@ -8,10 +8,7 @@
     "start": "web-ext run --pref extensions.experiments.enabled=true --pref security.sandbox.content.level=2"
   },
   "webExt": {
-    "sourceDir": "./src/",
-    "run": {
-      "firefox": "firefoxdeveloperedition"
-    }
+    "sourceDir": "./src/"
   },
   "repository": {
     "type": "git",
