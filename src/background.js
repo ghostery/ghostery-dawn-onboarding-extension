@@ -31,5 +31,5 @@ function openOnboardingPage({ tabId, url }) {
 }
 
 browser.webNavigation.onBeforeNavigate.addListener(openOnboardingPage, {
-  url: [{ urlContains: 'glowstery.com/search?q=' }],
+  url: [{ urlContains: 'glowstery.com/search?q=' }, { urlContains: 'ghosterysearch.com/search?q=' }],
 });

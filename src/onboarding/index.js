@@ -11,17 +11,13 @@ document.querySelectorAll('[data-i18n]').forEach((element) => {
 async function submit() {
   const searchEngineName = document.querySelector('input:checked').value;
 
-  browser.ghostery?.setDefaultSearchEngine(searchEngineName);
+  await browser.ghostery?.setDefaultSearchEngine(searchEngineName);
 
   await browser.runtime.sendMessage('onboarding-complete');
   const currentTab = await browser.tabs.getCurrent();
 
-  const searchTab = await browser.tabs.create({});
-
   browser.search.search({
     query,
-    engine: searchEngineName,
-    tabId: searchTab.id,
   });
 
   browser.tabs.remove(currentTab.id);

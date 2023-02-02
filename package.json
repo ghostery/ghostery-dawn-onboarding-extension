@@ -5,7 +5,7 @@
   "scripts": {
     "build": "web-ext build",
     "sign": "web-ext sign --channel unlisted --timeout 360000",
-    "start": "web-ext run --pref extensions.experiments.enabled=true --pref security.sandbox.content.level=2"
+    "start": "web-ext run --firefox nightly --pref extensions.experiments.enabled=true --pref security.sandbox.content.level=2"
   },
   "webExt": {
     "sourceDir": "./src/"
