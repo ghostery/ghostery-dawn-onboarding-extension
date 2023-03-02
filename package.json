@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ghostery/ghostery-dawn-onboarding-extension/issues"
   },
-  "homepage": "https://github.com/ghostery/ghostery-dawn-onboarding-extension#readme"
+  "homepage": "https://github.com/ghostery/ghostery-dawn-onboarding-extension#readme",
+  "devDependencies": {
+    "web-ext": "^7.5.0"
+  }
 }
